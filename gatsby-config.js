@@ -31,6 +31,7 @@ module.exports = {
         apiURL: process.env.DEPLOY_URL
           ? "https://agile-hollows-45221.herokuapp.com"
           : "http://localhost:1337",
+        queryLimit: 5000,
         // Default to 100
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
