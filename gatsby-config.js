@@ -28,9 +28,9 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL:
-          "https://agile-hollows-45221.herokuapp.com",
-        queryLimit: 1000,
+        apiURL: process.env.DEPLOY_URL
+          ? "https://agile-hollows-45221.herokuapp.com"
+          : "http://localhost:1337",
         // Default to 100
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
