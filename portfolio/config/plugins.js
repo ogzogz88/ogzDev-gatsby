@@ -3,11 +3,13 @@ module.exports = ({ env }) => ({
     upload: {
         provider: 'cloudinary',
         providerOptions: {
-            cloud_name: env('CLOUDINARY_NAME'),
-            api_key: env('CLOUDINARY_API_KEY'),
-            api_secret: env('CLOUDINARY_API_SECRET'),
+            cloud_name: 'hosk1g6z2',
+            api_key: '176617439181765',
+            api_secret: 'QQCSNRnpkXDDNGh1xbrz9XPe1yU',
         },
     },
     // ...
 });
+
+// cloudinary configuration changeddd
 
