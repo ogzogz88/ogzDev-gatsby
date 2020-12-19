@@ -22,6 +22,7 @@ const Hero = () => {
   //   }
   // } = useStaticQuery(query);
 
+
   return (
     <header className="hero">
       <div className="section-center hero-center">
