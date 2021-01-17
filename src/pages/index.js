@@ -12,7 +12,8 @@ export default ({ data }) => {
 
   const {
     allStrapiProjects: { nodes: projects },
-    allStrapiBlogs: { nodes: blogs }
+    allStrapiBlogs: { nodes: blogs },
+    allStrapiHeroes: { nodes: heroes }
   } = data;
   return (
     <Layout atMainPage={true}>
@@ -20,7 +21,7 @@ export default ({ data }) => {
         title="Home | ogzDev | Frontend Web Developer"
         description="Home | A self-taughed web developer, javascript and CSS enthusiast, using javascript, typescript, react, nodeJS"
       />
-      <Hero />
+      <Hero heroes={heroes} />
       <Services />
       <Jobs />
       <Projects projects={projects} title="featured projects" showLink />
@@ -69,6 +70,17 @@ export const query = graphql`
         slug
         title
         category
+      }
+    }
+    allStrapiHeroes {
+      nodes {
+        heroImg {
+          childImageSharp {
+            fluid{
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
 
