@@ -11,9 +11,9 @@ const contact = () => {
           <h3>get in touch</h3>
           <form action="https://formspree.io/f/xeqppjob" method="POST">
             <div className="form-group">
-              <input type="text" name="name" placeholder="name" className="form-control" />
-              <input type="email" name="_replyto" placeholder="email" className="form-control" />
-              <textarea name="message" cols="30" rows="10" placeholder="say hello" className="form-control"></textarea>
+              <input type="text" name="name" placeholder="name" className="form-control" required />
+              <input type="email" name="_replyto" placeholder="email" className="form-control" required />
+              <textarea name="message" cols="30" rows="10" placeholder="say hello" className="form-control" required></textarea>
             </div>
             <button type="submit" className="btn submit-btn">submit</button>
           </form>
