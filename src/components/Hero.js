@@ -14,7 +14,7 @@ const Hero = ({ heroes }) => {
           <div>
             <h4>Hello!</h4>
             <div className="underline"></div>
-            <h1>I'm Oğuzhan</h1>
+            <h1>I'm Oğuzhan.</h1>
             <h4>Self-taught frontend web developer.</h4>
             <Link to="/contact" className="btn">contact me</Link>
             <SocialLinks />
